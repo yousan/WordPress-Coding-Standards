@@ -1087,7 +1087,30 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'version' => '4.6',
 		),
 
-		// No deprecated functions in WordPress 4.7.
+		'_sort_nav_menu_items' => array(
+			'alt'     => 'wp_list_sort',
+			'version' => '4.7',
+		),
+		'_usort_terms_by_ID' => array(
+			'alt'     => 'wp_list_sort',
+			'version' => '4.7',
+		),
+		'_usort_terms_by_name' => array(
+			'alt'     => 'wp_list_sort',
+			'version' => '4.7',
+		),
+		'get_paged_template' => array(
+			'alt'     => '',
+			'version' => '4.7',
+		),
+		'wp_get_network' => array(
+			'alt'     => 'get_network',
+			'version' => '4.7',
+		),
+		'wp_kses_js_entities' => array(
+			'alt'     => '',
+			'version' => '4.7',
+		),
 
 		'wp_dashboard_plugins_output' => array(
 			'alt'     => '',

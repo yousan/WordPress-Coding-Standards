@@ -32,7 +32,7 @@ class WordPress_Tests_WP_DeprecatedFunctionsUnitTest extends AbstractSniffUnitTe
 	 * @return array <int line number> => <int number of warnings>
 	 */
 	public function getWarningList() {
-		return array_fill( 252, 10, 1 );
+		return array_fill( 252, 16, 1 );
 
 	}
 
