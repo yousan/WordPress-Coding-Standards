@@ -241,14 +241,14 @@ preview_theme_ob_filter();
 preview_theme_ob_filter_callback();
 wp_richedit_pre();
 wp_ajax_wp_fullscreen_save_post();
-
-// Warning.
 flush_widget_cache(); // WP_Widget_Recent_Comments::flush_widget_cache()
 post_permalink();
 force_ssl_login();
 create_empty_blog();
 get_admin_users_for_domain();
 wp_get_http();
+
+// Warning.
 is_comments_popup();
 add_object_page();
 add_utility_page();
@@ -258,3 +258,4 @@ popuplinks();
 get_currentuserinfo();
 wp_embed_handler_googlevideo();
 wp_get_sites();
+wp_dashboard_plugins_output();

@@ -1088,6 +1088,11 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 		),
 
 		// No deprecated functions in WordPress 4.7.
+
+		'wp_dashboard_plugins_output' => array(
+			'alt'     => '',
+			'version' => '4.8',
+		),
 	);
 
 	/**
