@@ -3,3 +3,7 @@
 .settings/
 vendor
 composer.lock
+.idea/encodings.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/WordPress-Coding-Standards.iml
