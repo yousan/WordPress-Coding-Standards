@@ -46,14 +46,24 @@ class WordPress_Sniffs_Files_FileNameSniff extends WordPress_Sniff {
 	 *
 	 * @var string
 	 */
+//	const THEME_EXCEPTIONS_REGEX = '`
+//		^                    # Anchor to the beginning of the string.
+//		(?:
+//							 # Template prefixes which can have exceptions.
+//			(?:archive|category|content|embed|page|single|tag|taxonomy)
+//			-[^\.]+          # These need to be followed by a dash and some chars.
+//		|
+//			(?:application|audio|example|image|message|model|multipart|text|video) #Top-level mime-types
+//			(?:_[^\.]+)?     # Optionally followed by an underscore and a sub-type.
+//		)\.(?:php|inc)$      # End in .php (or .inc for the test files) and anchor to the end of the string.
+//	`Dx';
+
 	const THEME_EXCEPTIONS_REGEX = '`
 		^                    # Anchor to the beginning of the string.
 		(?:
 							 # Template prefixes which can have exceptions.
-			(?:archive|category|content|embed|page|single|tag|taxonomy)
 			-[^\.]+          # These need to be followed by a dash and some chars.
 		|
-			(?:application|audio|example|image|message|model|multipart|text|video) #Top-level mime-types
 			(?:_[^\.]+)?     # Optionally followed by an underscore and a sub-type.
 		)\.(?:php|inc)$      # End in .php (or .inc for the test files) and anchor to the end of the string.
 	`Dx';
